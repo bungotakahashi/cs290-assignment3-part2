@@ -1,5 +1,5 @@
 var originalGitList = [];
-var box = document.getElementsByTagName("box")[0];
+var body = document.getElementsByTagName("body")[0];
 var tbl     = document.createElement("table");
 var tblBody = document.createElement("tbody");
 
@@ -8,12 +8,14 @@ var tblBody = document.createElement("tbody");
 
 
 var fetchData= function(){
+
   var req = new XMLHttpRequest();
   if(!req){
     throw 'Unable to create HttpRequest.';
   }
   req.onreadystatechange = function (){
     if(this.readyState === 4){
+      alert("aa");
         var array = JSON.parse(this.responseText);
 
 
@@ -64,7 +66,7 @@ var generateGistHtml= function(gist){
   row.appendChild(cell);
   tblBody.appendChild(row);
   tbl.appendChild(tblBody);
-  box.appendChild(tbl);
+  body.appendChild(tbl);
 }
 
 var findById = function(id) {
