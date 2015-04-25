@@ -15,7 +15,9 @@
       <input type="radio" name="Language" value="SQL" checked>SQL
       <input type="radio" name="Language" value="JSON" checked>JSON
       <input type="radio" name="Language" value="Python" checked>Python
-      <button id= "submit" type= "submit" onclick="fetchData()"> Fetch Gists</button>
+      <!--<button id= "submit" type= "submit" onclick="fetchData()"> Fetch Gists</button> 
+      <input id= "fetch" type="button" value="fetch" onclick="fetchData()">-->
+      <input id="fetch" type="button" value="fetch" onclick="fetchData()">
       <input id= "text" type="text" name="Gist">
 
     </form>
@@ -27,7 +29,7 @@
     <div class= "contents">
       <div id= "gists">
         <h1>GISTS</h1>
-        <div class="box">
+        <div id="box1">
           <p>gists here </p>
         </div>
 
@@ -36,7 +38,7 @@
 
       <div id= "favorites">
         <h1>Favorite GISTS</h1>
-        <div class="box">
+        <div id="box2">
           <p>favorites</p>
         </div>
 
