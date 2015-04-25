@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset= "UTF-8">
+    <title>Assignment3-part2</title>
+    <link rel= "stylesheet" href="hw3_part2.css">
+    <script src= "hw3_part2.js"></script>
+  </head>
+
+
+
+  <body>
+    <form action= "https://api.github.com/gists" method= "GET">
+      <input type="radio" name="Language" value="JavaScript" checked>JacaScript
+      <input type="radio" name="Language" value="SQL" checked>SQL
+      <input type="radio" name="Language" value="JSON" checked>JSON
+      <input type="radio" name="Language" value="Python" checked>Python
+      <button id= "submit" type= "submit" onclick="fetchData()"> Fetch Gists</button>
+      <input id= "text" type="text" name="Gist">
+    </form>
+
+    <br>
+    <br>
+    <br>
+
+    <div class= "contents">
+      <div id= "gists">
+        <h1>GISTS</h1>
+        <div class="box">
+          <p>gists here </p>
+        </div>
+
+      </div>
+
+
+      <div id= "favorites">
+        <h1>Favorite GISTS</h1>
+        <div class="box">
+          <p>favorites</p>
+        </div>
+
+
+      </div>
+
+  </div>
+
+  </body>
+
+</html>
