@@ -167,13 +167,13 @@ var favorites = function(gist) {
 var load = function(){
 
  if(JSON.parse(localStorage.getItem("favoriteItems"))){
-    alert('not empty');
+    //alert('not empty');
     favoriteList = JSON.parse(localStorage.getItem("favoriteItems"));
  }
 
- else{
-    alert("empty");
- }
+ //else{
+ //   alert("empty");
+ //}
   
   for (var i=0; i< favoriteList.length; i++){
     favorites(favoriteList[i]);
